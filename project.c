@@ -8,6 +8,7 @@
 #include <time.h>
 #include <signal.h>
 
+
 // ANSI color codes for beautification
 #define COLOR_RESET   "\033[0m"
 #define COLOR_GREEN   "\033[32m"
@@ -24,7 +25,6 @@
 #define MAX_PATIENTS 100
 
 typedef enum { REGULAR, EMERGENCY, GENERAL, ICU } PatientType;
-
 // ------------- PATIENT STRUCT -------------
 typedef struct {
     int id;
