@@ -44,8 +44,10 @@ typedef struct {
 } PriorityQueue;
 
 void pq_init(PriorityQueue* pq) {
+    
     pq->size = 0;
     pthread_mutex_init(&pq->lock, NULL);
+    
 }
 
 // Higher priority for EMERGENCY, FIFO for same priority
