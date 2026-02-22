@@ -53,7 +53,7 @@ void pq_init(PriorityQueue* pq) {
 // Higher priority for EMERGENCY, FIFO for same priority
 static int patient_cmp(const Patient* a, const Patient* b) {
     if (a->type != b->type)
-        return (b->type - a->type); // EMERGENCY > REGULAR
+        return (b->type - a->type); // Return if EMERGENCY > REGULAR
     return (a->check_in_time > b->check_in_time) - (a->check_in_time < b->check_in_time);
 }
 
