@@ -66,7 +66,8 @@ void pq_push(PriorityQueue* pq, Patient* patient) {
     int i = pq->size++;
     pq->patients[i] = patient;
     // Bubble up to maintain priority
-    while (i > 0 && patient_cmp(pq->patients[i], pq->patients[i-1]) < 0) {
+    while (i > 0 && patient_cmp(pq->patients[i], pq->patients[i-1]) < 0)
+        {
         Patient* tmp = pq->patients[i];
         pq->patients[i] = pq->patients[i-1];
         pq->patients[i-1] = tmp;
