@@ -170,7 +170,6 @@ void* status_monitor(void* arg) {
     }
     return NULL;
 }
-
 // ------------- THREAD ROUTINES -------------
 void* admit_patients(void* arg) {
     while (1) {
