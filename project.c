@@ -8,7 +8,6 @@
 #include <time.h>
 #include <signal.h>
 
-
 // ANSI color codes for beautification
 #define COLOR_RESET   "\033[0m"
 #define COLOR_GREEN   "\033[32m"
