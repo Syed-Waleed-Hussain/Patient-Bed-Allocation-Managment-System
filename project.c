@@ -24,7 +24,7 @@
 #define MAX_PATIENTS 100
 
 typedef enum { REGULAR, EMERGENCY, GENERAL, ICU } PatientType;
-// ------------- PATIENT STRUCT -------------
+// ------------- PATIENT STRUCT ------------
 typedef struct {
     int id;
     char name[64];
