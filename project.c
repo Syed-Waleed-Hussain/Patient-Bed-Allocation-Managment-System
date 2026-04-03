@@ -95,7 +95,6 @@ int pq_is_empty(PriorityQueue* pq) {
     pthread_mutex_unlock(&pq->lock);
     return empty;
 }
-
 // ------------- LOGGER -------------
 static FILE* log_file = NULL;
 static pthread_mutex_t log_lock;
@@ -153,7 +152,6 @@ void print_status() {
     printf(COLOR_BOLD COLOR_YELLOW "Patients in Queue: %d\n" COLOR_RESET, pq.size);
     pthread_mutex_unlock(&bed_lock);
 }
-
 // Signal handler for graceful shutdown
 void handle_sigint(int sig) {
     running = 0;
