@@ -133,8 +133,7 @@ void logger_close() {
     }
     pthread_mutex_unlock(&log_lock);
 }
-
-// ------------- GLOBALS -------------
+// ------------- GLOBALS ------------
 static int occupied_beds = 0;
 static pthread_mutex_t bed_lock;
 PriorityQueue pq;
