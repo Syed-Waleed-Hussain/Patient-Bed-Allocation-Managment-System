@@ -24,6 +24,7 @@
 #define MAX_PATIENTS 100
 
 typedef enum { REGULAR, EMERGENCY, GENERAL, ICU } PatientType;
+
 // ------------- PATIENT STRUCT ------------
 typedef struct {
     int id;
@@ -44,8 +45,7 @@ typedef struct {
 
 void pq_init(PriorityQueue* pq) {
     pq->size = 0;
-    pthread_mutex_init(&pq->lock, NULL);
-    
+    pthread_mutex_init(&pq->lock, NULL);   
 }
 
 // Higher priority for EMERGENCY, FIFO for same priority
