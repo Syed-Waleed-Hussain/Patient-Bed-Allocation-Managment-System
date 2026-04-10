@@ -17,7 +17,7 @@
 #define COLOR_MAGENTA "\033[35m"
 #define COLOR_BOLD    "\033[1m"
 
-// ------------- CONSTANTS & ENUMS -------------
+// ------------- CONSTANTS & ENUMS ------------
 #define TOTAL_BEDS 5
 #define ICU_BEDS 5
 #define GENERAL_BEDS 10
