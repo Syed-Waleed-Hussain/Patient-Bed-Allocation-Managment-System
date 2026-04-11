@@ -36,7 +36,7 @@ typedef struct {
     int isICU; // For code that uses ICU flag
 } Patient;
 
-// ------------- PRIORITY QUEUE -------------
+// ------------- PRIORITY QUEUE -----------
 typedef struct {
     Patient* patients[MAX_PATIENTS];
     int size;
