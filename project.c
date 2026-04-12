@@ -84,6 +84,7 @@ Patient* pq_pop(PriorityQueue* pq) {
     for (int i = 1; i < pq->size; ++i) {
         pq->patients[i-1] = pq->patients[i];
     }
+    
     pq->size--;
     pthread_mutex_unlock(&pq->lock);
     return top;
